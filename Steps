@@ -1,0 +1,17 @@
+
+ 
+
+ How to Automatically Revert  Changes on Ec2 Security Groups
+ ********************************************************************
+
+1)  Create Custom VPC Security Group with tag name Name:prod-sg 
+
+2) Create Cloud Trail on the Region
+
+3) Create Lambda execution role with ec2 permission
+
+4) Create Lambda funtion and add which security group need for revert changes
+
+5) Add Cloudwatch Event Trigger for security group changes
+
+6) Test : change the rule in the securiry group
